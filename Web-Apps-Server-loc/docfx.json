@@ -47,11 +47,11 @@
                                          "breadcrumb_path":  "/office/Web--Apps-Server-loc/breadcrumb/toc.json",
                                          "extendBreadcrumb":  true,
                                          "ROBOTS":  "INDEX,FOLLOW",
-                                         "uhfHeaderId":  "MSDocsHeader-Office",
                                          "ms.topic":  "conceptual",
-                                         "author":  "",
-                                         "ms.author":  "",
-                                         "ms.prod":  "Office"
+                                         "author":  "mikeplum",
+                                         "ms.author":  "mikeplum",
+                                         "ms.prod":  "office-web-server",
+                                         "ms.technology": "office-web"
                                      },
                   "fileMetadata":  {
 
