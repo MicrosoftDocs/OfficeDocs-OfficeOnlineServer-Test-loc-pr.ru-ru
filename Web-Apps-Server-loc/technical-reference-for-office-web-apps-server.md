@@ -39,7 +39,7 @@ _**Последнее изменение раздела:**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="windows-powershell-for-office-web-apps-server.md">Windows PowerShell для сервера Office Web Apps</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/?view=officewebapps-ps">Windows PowerShell для сервера Office Web Apps</a></p></td>
 <td><p>Перечисляет командлеты Windows PowerShell для Сервер Office Web Apps.</p></td>
 </tr>
 </tbody>

@@ -46,7 +46,7 @@ _**Последнее изменение раздела:**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td>Применение обновлений Сервер Office Web Apps с использованием автоматического процесса обновления не поддерживается Сервер Office Web Apps, поскольку обновления к Сервер Office Web Apps должны применяться особым образом, описанным в данной статье. Если применять обновления Сервер Office Web Apps автоматически, пользователи, возможно, не смогут просматривать и редактировать документы в Office Web Apps. В таком случае необходимо выполнить перестройку фермы Сервер Office Web Apps. Для этого нужно удалить Сервер Office Web Apps из фермы с помощью <a href="remove-officewebappsmachine.md">Remove-OfficeWebAppsMachine</a>, удалить Сервер Office Web Apps с помощью приложения или программы удаления и переустановить Сервер Office Web Apps, следуя пошаговым инструкциям из статьи <a href="deploy-office-web-apps-server.md">Развертывание сервера Office Web Apps</a>. После переустановки примените обновление согласно инструкциям из данной статьи.<br />
+<td>Применение обновлений Сервер Office Web Apps с использованием автоматического процесса обновления не поддерживается Сервер Office Web Apps, поскольку обновления к Сервер Office Web Apps должны применяться особым образом, описанным в данной статье. Если применять обновления Сервер Office Web Apps автоматически, пользователи, возможно, не смогут просматривать и редактировать документы в Office Web Apps. В таком случае необходимо выполнить перестройку фермы Сервер Office Web Apps. Для этого нужно удалить Сервер Office Web Apps из фермы с помощью <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, удалить Сервер Office Web Apps с помощью приложения или программы удаления и переустановить Сервер Office Web Apps, следуя пошаговым инструкциям из статьи <a href="deploy-office-web-apps-server.md">Развертывание сервера Office Web Apps</a>. После переустановки примените обновление согласно инструкциям из данной статьи.<br />
 Необходимо также прочитать указания из раздела о <a href="plan-office-web-apps-server.md">планировании обновлений для сервера Office Web Apps</a> и внедрить процесс обновления для фермы Сервер Office Web Apps.</td>
 </tr>
 </tbody>
@@ -59,7 +59,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 Обновления, выпущенные для Сервер Office Web Apps, будут обновлять Сервер Office Web Apps и любые установленные языковые пакеты Сервер Office Web Apps. Отдельных обновлений для языковых пакетов Сервер Office Web Apps не существует.
 
-При обновлении вам придется создать ферму Сервер Office Web Apps заново. Чтобы подготовиться повторно создать ферму Сервер Office Web Apps, просмотрите свойства текущей фермы Сервер Office Web Apps с помощью командлета Windows PowerShell**Get-OfficeWebAppFarm**, а также параметры [New-OfficeWebAppsFarm](new-officewebappsfarm.md). Параметры, используемые для **New-OfficeWebAppsFarm**, должны совпадать с теми, которые использовались при первой настройке фермы Сервер Office Web Apps.
+При обновлении вам придется создать ферму Сервер Office Web Apps заново. Чтобы подготовиться повторно создать ферму Сервер Office Web Apps, просмотрите свойства текущей фермы Сервер Office Web Apps с помощью командлета Windows PowerShell**Get-OfficeWebAppFarm**, а также параметры [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). Параметры, используемые для **New-OfficeWebAppsFarm**, должны совпадать с теми, которые использовались при первой настройке фермы Сервер Office Web Apps.
 
 <table>
 <colgroup>
@@ -102,7 +102,7 @@ _**Последнее изменение раздела:**2016-12-16_
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описаны в статье [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+    Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описаны в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Применение обновлений программного обеспечения к ферме Office Web Apps с несколькими серверами
 
@@ -126,7 +126,7 @@ _**Последнее изменение раздела:**2016-12-16_
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+    Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 6.  Балансируйте нагрузку для новой фермы в зависимости от количества серверов в ферме Сервер Office Web Apps. Это действие можно отложить до того момента, когда у вас будет больше обновленных серверов для добавления к ферме.
 
@@ -143,10 +143,10 @@ _**Последнее изменение раздела:**2016-12-16_
 ## См. также
 
 
-[Remove-OfficeWebAppsMachine](remove-officewebappsmachine.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[Get-OfficeWebAppsFarm](get-officewebappsfarm.md)  
+[Remove-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[Get-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)  
 
 
 [План содержимого для сервера Office Web Apps](content-roadmap-for-office-web-apps-server.md)  

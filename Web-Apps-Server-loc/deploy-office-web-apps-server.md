@@ -242,7 +242,7 @@ _**Последнее изменение раздела:**2017-10-05_
 
   - **–EditingEnabled** включает редактирование в Office Web Apps при использовании вместе с SharePoint 2013. Этот параметр не используется Lync Server 2013, так как этот узел не поддерживает редактирование.
 
-Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Сообщения об ошибке "500 Исключения веб-службы" и "500.21 — внутренняя ошибка сервера"
 
@@ -293,7 +293,7 @@ _**Последнее изменение раздела:**2017-10-05_
 
   - **–EditingEnabled** — это необязательный параметр, который включает редактирование в Office Web Apps при использовании вместе с SharePoint 2013. Этот параметр не используется Lync Server 2013, так как этот узел не поддерживает редактирование.
 
-Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Сообщения об ошибке "500 Исключения веб-службы" и "500.21 — внутренняя ошибка сервера"
 
@@ -366,7 +366,7 @@ default="true" ext="xls"/><action name="view"
 
   - **–EditingEnabled** — это необязательный параметр, который включает редактирование в Office Web Apps при использовании вместе с SharePoint 2013. Этот параметр не используется Lync Server 2013, так как этот узел не поддерживает редактирование.
 
-Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 Сообщения об ошибке "500 Исключения веб-службы" и "500.21 — внутренняя ошибка сервера"
 
@@ -376,7 +376,7 @@ default="true" ext="xls"/><action name="view"
 
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
-Хотите узнать больше этих параметрах? Их можно найти в разделе [New-OfficeWebAppsMachine](new-officewebappsmachine.md).
+Хотите узнать больше этих параметрах? Их можно найти в разделе [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
 ## Шаг 3. Проверьте, успешно ли создана ферма серверов Office Web Apps
 
@@ -428,8 +428,8 @@ default="true" ext="xls"/><action name="view"
 ## См. также
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [План содержимого для сервера Office Web Apps](content-roadmap-for-office-web-apps-server.md)  

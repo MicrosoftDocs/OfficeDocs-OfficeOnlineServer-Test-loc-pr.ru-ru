@@ -348,7 +348,7 @@ _**Последнее изменение раздела:**2017-10-10_
 
   - **Спланируйте потоки входящих и исходящих данных.** В развертывании для Интернета маршрутизируйте все исходящие данные через устройство NAT. В ферме с несколькими серверами включите обработку всех входящих данных с подсистемой балансировки нагрузки.
 
-  - **Убедитесь, что все серверы в ферме Сервер Office Web Apps присоединены к домену и являются частью одного и того же подразделения.** Используйте параметр **FarmOU** в командлете [New-OfficeWebAppsFarm](new-officewebappsfarm.md), чтобы запретить другим серверам, не входящим в это подразделение, присоединяться к ферме.
+  - **Убедитесь, что все серверы в ферме Сервер Office Web Apps присоединены к домену и являются частью одного и того же подразделения.** Используйте параметр **FarmOU** в командлете [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps), чтобы запретить другим серверам, не входящим в это подразделение, присоединяться к ферме.
 
   - **Используйте HTTPS для всех входящих запросов.**
 
@@ -414,13 +414,13 @@ _**Последнее изменение раздела:**2017-10-10_
 
 ## Запрет на присоединение серверов к ферме серверов Office Web Apps по их принадлежности к подразделениям
 
-Чтобы запретить нежелательным серверам присоединяться к ферме Сервер Office Web Apps, вы можете создать для них отдельное подразделение и соответствующим образом настроить параметр FarmOU при создании фермы. Дополнительные сведения о параметре FarmOU см. в статье [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Чтобы запретить нежелательным серверам присоединяться к ферме Сервер Office Web Apps, вы можете создать для них отдельное подразделение и соответствующим образом настроить параметр FarmOU при создании фермы. Дополнительные сведения о параметре FarmOU см. в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Ограничение доступа узлов к серверу Office Web Apps с помощью списка разрешений
 
 С помощью списка разрешений вы можете запретить подключение нежелательных узлов к ферме Сервер Office Web Apps, что могло бы повлечь за собой операции с файлами без вашего согласия. Чтобы ограничить список узлов, которые смогут выполнять операции запроса файлов (например, извлечение и изменение файлов или извлечение метаданных) к Сервер Office Web Apps, добавьте нужные домены в список разрешенных.
 
-Вы можете добавлять домены в список разрешенных уже после создания фермы Сервер Office Web Apps. Дополнительные сведения о добавлении доменов в список разрешенных см. в статье [New-OfficeWebAppsHost](new-officewebappshost.md).
+Вы можете добавлять домены в список разрешенных уже после создания фермы Сервер Office Web Apps. Дополнительные сведения о добавлении доменов в список разрешенных см. в статье [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
 <table>
 <thead>
@@ -438,19 +438,19 @@ _**Последнее изменение раздела:**2017-10-10_
 
 ## Планирование Online Viewers с использованием сервера Office Web Apps
 
-По умолчанию функция Online Viewers включается после установки Сервер Office Web Apps. Если вы планируете использовать Online Viewers в организации, ознакомьтесь со следующими рекомендациями. В некоторых случаях может потребоваться отключить некоторые возможности Online Viewers. Приведенные ниже рекомендации относятся к параметрам, заданным с помощью командлетов Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) и [Set-OfficeWebAppsFarm](set-officewebappsfarm.md).
+По умолчанию функция Online Viewers включается после установки Сервер Office Web Apps. Если вы планируете использовать Online Viewers в организации, ознакомьтесь со следующими рекомендациями. В некоторых случаях может потребоваться отключить некоторые возможности Online Viewers. Приведенные ниже рекомендации относятся к параметрам, заданным с помощью командлетов Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) и [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
 
 ## Рекомендации по обеспечению безопасности для Online Viewers
 
 Файлы, которые предназначены для просмотра в веб-браузере с помощью Online Viewers, не должны требовать проверки подлинности. Другими словами, они должны находиться в открытом доступе, так как Online Viewers не поддерживает проверку подлинности при извлечении файлов. Мы настоятельно рекомендуем реализовать доступ к ферме Сервер Office Web Apps с Online Viewers либо только из интрасети, либо только из Интернета, но не из обеих сетей одновременно. Это связано с тем, что Сервер Office Web Apps не различает запросы URL-адресов в интрасети и Интернете. Соответственно, при поступлении из Интернета запроса к URL-адресу в интрасети возможна утечка данных в результате передачи документа для внутреннего пользования сторонним лицам.
 
-По той же причине, если сервер Сервер Office Web Apps должен подключаться только к Интернету, мы настоятельно советуем отключить поддержку UNC в Online Viewers. Чтобы сделать это, присвойте параметру OpenFromUncEnabled значение False с помощью командлетов Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) (для новых ферм) или [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (для существующих ферм).
+По той же причине, если сервер Сервер Office Web Apps должен подключаться только к Интернету, мы настоятельно советуем отключить поддержку UNC в Online Viewers. Чтобы сделать это, присвойте параметру OpenFromUncEnabled значение False с помощью командлетов Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (для новых ферм) или [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (для существующих ферм).
 
 В качестве дополнительных мер безопасности с помощью Online Viewers можно просматривать файлы Office размером не более 10 МБ.
 
 ## Настройка параметров Online Viewers
 
-Для настройки Online Viewers вы можете использовать следующие параметры Windows PowerShell в командлетах [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (для новых ферм) и [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (для существующих ферм).
+Для настройки Online Viewers вы можете использовать следующие параметры Windows PowerShell в командлетах [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (для новых ферм) и [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (для существующих ферм).
 
   - **OpenFromUrlEnabled**.   Включает или отключает Online Viewers. Этот параметр управляет функцией Online Viewers для файлов с URL-адресами и UNC-путями. По умолчанию при создании новой фермы Сервер Office Web Apps ему присвоено значение False (отключено).
 

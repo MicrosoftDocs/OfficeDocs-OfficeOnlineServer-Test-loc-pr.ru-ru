@@ -27,7 +27,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 Если SharePoint 2013 настроен для использования Сервер Office Web Apps, то по умолчанию файлы Word, PowerPoint, Excel и OneNote открываются в браузере. PDF-документы открываются в Word Web App. Вы можете изменить настройки по умолчанию, чтобы открывать файлы непосредственно в клиентских приложениях (или средстве просмотра PDF по умолчанию) двумя способами.
 
-  - **Для фермы SharePoint 2013**. В ферме SharePoint 2013 вы можете настроить способ открытия по умолчанию для каждого типа файла с помощью командлетов [New-SPWOPIBinding](new-spwopibinding.md) и [Set-SPWOPIBinding](set-spwopibinding.md)Windows PowerShell. Эти командлеты применяются также для [изменения поведения PDF-документов](http://go.microsoft.com/fwlink/p/?linkid=330246).
+  - **Для фермы SharePoint 2013**. В ферме SharePoint 2013 вы можете настроить способ открытия по умолчанию для каждого типа файла с помощью командлетов [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) и [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps)Windows PowerShell. Эти командлеты применяются также для [изменения поведения PDF-документов](http://go.microsoft.com/fwlink/p/?linkid=330246).
 
   - **Для семейств сайтов и библиотек документов**. Пользователи и администраторы семейств сайтов могут использовать функцию OpenInClient в SharePoint 2013, чтобы указать, где необходимо открывать файлы Office: в клиентском приложении или в браузере. Пользователи могут изменить соответствующий параметр в свойствах библиотеки документов, а администраторы семейства сайтов — в центре администрирования семейства или с помощью командлета [Enable-SPFeature](https://technet.microsoft.com/ru-ru/library/ff607803\(v=office.15\)), который включает функцию OpenInClient. В следующем разделе содержится информация о нескольких разных способах включения функции OpenInClient.
 
@@ -59,7 +59,7 @@ _**Последнее изменение раздела:**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td>В некоторых процедурах, приведенных в этой статье, для выполнения командлетов SharePoint используется Командная консоль SharePoint 2013. Если вы решили использовать консоль Windows PowerShell, необходимо добавить оснастку Microsoft.SharePoint.PowerShell с помощью командлета <strong>Add-PSSnapin</strong>. Дополнительные сведения об использовании Windows PowerShell с SharePoint 2013 см. в статье <a href="use-windows-powershell-to-administer-sharepoint-2013.md">Использование Windows PowerShell для администрирования SharePoint 2013</a>.</td>
+<td>В некоторых процедурах, приведенных в этой статье, для выполнения командлетов SharePoint используется Командная консоль SharePoint 2013. Если вы решили использовать консоль Windows PowerShell, необходимо добавить оснастку Microsoft.SharePoint.PowerShell с помощью командлета <strong>Add-PSSnapin</strong>. Дополнительные сведения об использовании Windows PowerShell с SharePoint 2013 см. в статье <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Использование Windows PowerShell для администрирования SharePoint 2013</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -109,7 +109,7 @@ _**Последнее изменение раздела:**2016-12-16_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="use-windows-powershell-to-administer-sharepoint-2013.md">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
+    <td>Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
     </tr>
     </tbody>
     </table>
@@ -195,7 +195,7 @@ _**Последнее изменение раздела:**2016-12-16_
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="use-windows-powershell-to-administer-sharepoint-2013.md">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
+    <td>Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
     </tr>
     </tbody>
     </table>
@@ -234,11 +234,11 @@ _**Последнее изменение раздела:**2016-12-16_
 ## См. также
 
 
-[Get-SPWOPIBinding](get-spwopibinding.md)  
+[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)  
 
 
 [План содержимого для сервера Office Web Apps](content-roadmap-for-office-web-apps-server.md)  
-[Использование Windows PowerShell для администрирования SharePoint 2013](use-windows-powershell-to-administer-sharepoint-2013.md)  
+[Использование Windows PowerShell для администрирования SharePoint 2013](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps)  
 [Сервер Office Web Apps](office-web-apps-server.md)  
 
 

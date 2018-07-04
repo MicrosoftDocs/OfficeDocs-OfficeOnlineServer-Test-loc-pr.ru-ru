@@ -41,7 +41,7 @@ _**Последнее изменение раздела:**2016-12-16_
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="windows-powershell-for-office-web-apps-sharepoint-2013.md">Windows PowerShell для Office Web Apps (SharePoint 2013)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Windows PowerShell для Office Web Apps (SharePoint 2013)</a></p></td>
 <td><p>Отображает командлеты Windows PowerShell для настройки SharePoint 2013 для использования Office Web Apps.</p></td>
 </tr>
 </tbody>

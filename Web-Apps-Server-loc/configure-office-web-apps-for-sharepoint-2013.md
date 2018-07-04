@@ -83,7 +83,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 После выполнения этой команды вы должны увидеть список привязок, отображенный в командной строке Windows PowerShell.
 
-Требуется помощь? См. описание командлета [New-SPWOPIBinding](new-spwopibinding.md).
+Требуется помощь? См. описание командлета [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps).
 
 ## Шаг 3. Просмотр зон WOPI для привязок SharePoint
 
@@ -93,7 +93,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 Эта команда должна показать зону WOPI **internal-http**. Если она отображается правильно, перейдите к шагу 5. В противном случае перейдите к следующему шагу.
 
-Требуется помощь? См. описание командлета [Get-SPWOPIZone](get-spwopizone.md).
+Требуется помощь? См. описание командлета [Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps).
 
 ## Шаг 4. Изменение зоны WOPI на зону "internal-http"
 
@@ -103,7 +103,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 Убедитесь, что новая зона является зоной **internal-http**, выполнив **Get-SPWOPIZone** еще раз.
 
-Требуется помощь? См. описание командлетов [Set-SPWOPIZone](set-spwopizone.md) и [Get-SPWOPIZone](get-spwopizone.md).
+Требуется помощь? См. описание командлетов [Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps) и [Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps).
 
 ## Шаг 5. Изменение значения параметра AllowOAuthOverHttp в SharePoint 2013 на True
 
@@ -159,7 +159,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
     New-SPWOPIBinding -ServerName <WacServerName> 
 
-Требуется помощь? См. описание командлета [New-SPWOPIBinding](new-spwopibinding.md).
+Требуется помощь? См. описание командлета [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps).
 
 ## Шаг 3. Просмотр зоны WOPI SharePoint 2013
 
@@ -169,7 +169,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 Отметьте, какая зона WOPI отображается.
 
-Требуется помощь? См. описание командлета [Get-SPWOPIZone](get-spwopizone.md).
+Требуется помощь? См. описание командлета [Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps).
 
 ## Шаг 4. Изменение зоны WOPI при необходимости
 
@@ -179,7 +179,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
     Set-SPWOPIZone -zone "external-https"
 
-Требуется помощь? См. описание командлета [Set-SPWOPIZone](set-spwopizone.md).
+Требуется помощь? См. описание командлета [Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps).
 
 ## Шаг 5. Проверка работы Office Web Apps
 
@@ -225,7 +225,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
     Get-SPWOPIBinding
 
-В полученном результате найдите строку **WopiZone: *зона***. Если результат, полученный из командлета Get-SPWopiZone, не соответствует зоне, которую возвратил командлет Get-SPWOPIBinding, выполните в SharePoint Server командлет **Set-SPWOPIZone -Zone**, чтобы изменить зону WOPI для соответствия результату, полученному из командлета Get-SPWOPIBinding. Справку по использованию этих командлетов см. в описаниях [Get-SPWOPIBinding](get-spwopibinding.md), [Set-SPWOPIBinding](set-spwopibinding.md) и [Get-SPWOPIZone](get-spwopizone.md).
+В полученном результате найдите строку **WopiZone: *зона***. Если результат, полученный из командлета Get-SPWopiZone, не соответствует зоне, которую возвратил командлет Get-SPWOPIBinding, выполните в SharePoint Server командлет **Set-SPWOPIZone -Zone**, чтобы изменить зону WOPI для соответствия результату, полученному из командлета Get-SPWOPIBinding. Справку по использованию этих командлетов см. в описаниях [Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps), [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps) и [Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps).
 
 ## Проблема: при попытке редактирования документа Office в Office Web Apps появляется сообщение об ошибке "Документ не может быть открыт для редактирования".
 
@@ -239,7 +239,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 Если вы настраиваете Office Web Apps в тестовой среде, использующей протокол HTTP, проверьте, установлен ли параметр AllowOAuthOverHttp в значение **True**, как описывается в разделеШаг 5. Измените значение параметра AllowOAuthOverHttp в SharePoint 2013 на True.
 
-Если вы когда-либо добавляли домены в список разрешений с помощью командлета [New-OfficeWebAppsHost](new-officewebappshost.md), убедитесь, что доступ к Office Web Apps осуществляется с несущего домена, который находится в списке разрешений. Чтобы просмотреть несущие домены в списке разрешений, откройте на сервере Сервер Office Web Apps командную строку Windows PowerShell от имени администратора и запустите командлет [Get-OfficeWebAppsHost](get-officewebappshost.md). Чтобы добавить домен в список разрешений, используйте командлет [New-OfficeWebAppsHost](new-officewebappshost.md).
+Если вы когда-либо добавляли домены в список разрешений с помощью командлета [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps), убедитесь, что доступ к Office Web Apps осуществляется с несущего домена, который находится в списке разрешений. Чтобы просмотреть несущие домены в списке разрешений, откройте на сервере Сервер Office Web Apps командную строку Windows PowerShell от имени администратора и запустите командлет [Get-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappshost?view=officewebapps-ps). Чтобы добавить домен в список разрешений, используйте командлет [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
 ## Проблема: при попытке просмотреть документ Office в Office Web Apps отображается сообщение об ошибке "Приложению Word Web App не удается открыть этот документ, так как служба занята. Повторите попытку позже".
 
@@ -277,7 +277,7 @@ _**Последнее изменение раздела:**2016-12-16_
 
 6.  Заново загрузите книгу в библиотеку документов SharePoint.
 
-Чтобы включить возможность взаимодействия пользователей с книгами, содержащими модель данных или представления Power View, в окне обозревателя, настройте службы Excel в SharePoint Server для отображения книг. Для этого администратор SharePoint должен запустить командлет New-SPWOPISupressionSetting на сервере, на котором установлен SharePoint Server. Подробнее см. в статьях [New-SPWOPISuppressionSetting](new-spwopisuppressionsetting.md) и [Администрирование служб Excel в SharePoint Server 2013](https://technet.microsoft.com/ru-ru/library/ee681487\(v=office.15\)).
+Чтобы включить возможность взаимодействия пользователей с книгами, содержащими модель данных или представления Power View, в окне обозревателя, настройте службы Excel в SharePoint Server для отображения книг. Для этого администратор SharePoint должен запустить командлет New-SPWOPISupressionSetting на сервере, на котором установлен SharePoint Server. Подробнее см. в статьях [New-SPWOPISuppressionSetting](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPISuppressionSetting?view=sharepoint-ps) и [Администрирование служб Excel в SharePoint Server 2013](https://technet.microsoft.com/ru-ru/library/ee681487\(v=office.15\)).
 
 ## Отключение SharePoint 2013 от сервера Office Web Apps
 
@@ -285,13 +285,13 @@ _**Последнее изменение раздела:**2016-12-16_
 
     Remove-SPWOPIBinding -All:$true
 
-Требуется помощь? См. описание командлета [Remove-SPWOPIBinding](remove-spwopibinding.md).
+Требуется помощь? См. описание командлета [Remove-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps).
 
 ## См. также
 
 
-[New-SPWOPIBinding](new-spwopibinding.md)  
-[Set-SPWOPIZone](set-spwopizone.md)  
+[New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps)  
+[Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps)  
 
 
 [План содержимого для сервера Office Web Apps](content-roadmap-for-office-web-apps-server.md)  
