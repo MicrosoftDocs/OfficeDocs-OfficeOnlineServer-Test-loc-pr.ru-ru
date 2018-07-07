@@ -1,4 +1,4 @@
-﻿---
+---
 title: Настройка Office Web Apps для SharePoint 2013
 TOCTitle: Настройка Office Web Apps для SharePoint 2013
 ms:assetid: a5276781-133b-413c-beca-b851e17c2081
@@ -113,11 +113,15 @@ _**Последнее изменение раздела:**2016-12-16_
 
 Если эта команда возвращает значение **False**, установите значение **True**, выполнив следующую команду.
 
+```
     $config = (Get-SPSecurityTokenServiceConfig)
-
+```
+```
     $config.AllowOAuthOverHttp = $true
-
+```
+```
     $config.Update()
+```
 
 Снова выполните следующую команду, чтобы убедиться, что параметр AllowOAuthOverHttp теперь имеет значение **True**.
 
