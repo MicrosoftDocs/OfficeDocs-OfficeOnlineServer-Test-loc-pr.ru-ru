@@ -1,5 +1,5 @@
 ﻿---
-title: Настройка способа открытия документов с поддержкой браузера по умолчанию (при использовании Office Web Apps с SharePoint 2013)
+title: Открытия документов с браузера (Office Web Apps)
 TOCTitle: Настройка способа открытия документов с поддержкой браузера по умолчанию
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/ru-ru/library/Ee837425(v=office.15)
