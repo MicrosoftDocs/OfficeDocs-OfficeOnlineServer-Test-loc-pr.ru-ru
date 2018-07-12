@@ -13,9 +13,9 @@ ms.translationtype: MT
 
  
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Последнее изменение раздела:**2017-05-26_
+**Последнее изменение раздела:** 2017-05-26
 
 **Сводка**. Статьи, содержащие сведения о развертывании и настройке Office Web Apps для SharePoint 2013 на локальных ресурсах.
 

@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Последнее изменение раздела:**2015-03-09_
+**Последнее изменение раздела:** 2015-03-09
 
 Обновляет открытый ключ, используемый для подключения к приложению WOPI в текущей ферме SharePoint, где выполняется данный командлет.
 
