@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Применение обновлений программного обеспечения к серверу Office Web Apps
+# Применение обновлений программного обеспечения к серверу Office Web Apps 
 
- 
+**Применимо к:** Office Web Apps Server
 
-_**Применимо к:**Office Web Apps Server_
-
-_**Последнее изменение раздела:**2016-12-16_
+**Последнее изменение раздела:** 2016-12-16
 
 **Сводка**. Сведения о применении обновлений программного обеспечения к ферме серверов Office Web Apps.
 
@@ -92,7 +90,9 @@ _**Последнее изменение раздела:**2016-12-16_
 
 2.  На сервере Сервер Office Web Apps, к которому нужно применить обновление программного обеспечения, под учетной записью администратора откройте командную строку Windows PowerShell и запустите следующую команду.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 3.  Установите обновление Сервер Office Web Apps на данный сервер. При необходимости выполните перезагрузку.
 
@@ -100,7 +100,9 @@ _**Последнее изменение раздела:**2016-12-16_
     
     Код в приведенном ниже примере создает новую ферму серверов Сервер Office Web Apps с именем http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
     Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описаны в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
@@ -116,7 +118,9 @@ _**Последнее изменение раздела:**2016-12-16_
 
 3.  На этом сервере Сервер Office Web Apps откройте командную строку Windows PowerShell под учетной записью администратора и запустите следующую команду.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 4.  Установите обновление Сервер Office Web Apps на данный сервер. При необходимости выполните перезагрузку.
 
@@ -124,7 +128,9 @@ _**Последнее изменение раздела:**2016-12-16_
     
     Код в приведенном ниже примере создает новую ферму серверов Сервер Office Web Apps с именем http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
     Дополнительные параметры, настраивающие службы транзакций, прокси-серверы, поддержку клипов и средства просмотра Online Viewer, описываются в статье [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
@@ -138,7 +144,9 @@ _**Последнее изменение раздела:**2016-12-16_
     
     3.  Откройте командную строку Windows PowerShell под учетной записью администратора и запустите следующую команду. Параметр **–MachineToJoin** добавляет текущий сервер к существующей ферме Сервер Office Web Apps. В этом случае вам необходимо добавить сервер к обновленной ферме Сервер Office Web Apps. Поэтому используйте имя компьютера одного из серверов в обновленной ферме Сервер Office Web Apps.
         
+        ```PowerShell
             New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+        ```
 
 ## См. также
 

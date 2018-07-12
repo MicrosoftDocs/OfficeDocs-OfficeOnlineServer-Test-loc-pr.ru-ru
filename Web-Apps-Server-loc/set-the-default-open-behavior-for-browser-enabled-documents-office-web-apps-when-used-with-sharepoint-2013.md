@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Настройка способа открытия документов с поддержкой браузера по умолчанию (при использовании Office Web Apps с SharePoint 2013)
+# Настройка способа открытия документов с поддержкой браузера по умолчанию (при использовании Office Web Apps с SharePoint 2013) 
 
- 
+**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Последнее изменение раздела:**2016-12-16_
+**Последнее изменение раздела:** 2016-12-16
 
 **Сводка.** В этой статье описывается, как настроить способ открытия документов Office по умолчанию в семействах сайтов и библиотеках документов SharePoint.
 
@@ -139,23 +137,33 @@ _**Последнее изменение раздела:**2016-12-16_
     
       - Чтобы включить функцию OpenInClient для определенного семейства сайтов (чтобы открывать документы в клиентском приложении), введите команду:
         
+        ```PowerShell
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+        ```
+        ``` 
         где *\<SiteCollURL\>* — URL-адрес семейства веб-сайтов.
+        ```
     
       - Чтобы включить функцию OpenInClient всех семейств сайтов (открывать документы в клиентском приложении), введите следующую команду:
-        
+
+        ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+        ```
     
       - Чтобы включить функцию OpenInClient для всех семейств сайтов (чтобы открывать документы в клиентском приложении), введите команду:
-        
+
+        ```PowerShell 
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+        ```
+        ``` 
         где *\<SiteCollURL\>* — URL-адрес семейства веб-сайтов.
+        ```
     
       - Чтобы отключить функцию OpenInClient для всех семейств сайтов (чтобы открывать документы в браузере), введите команду:
-        
+
+        ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+        ```
 
  **Настройка способа открытия по умолчанию для библиотеки документов с помощью страницы параметров библиотеки документов**
 
@@ -223,7 +231,9 @@ _**Последнее изменение раздела:**2016-12-16_
 
 3.  В командной строке Windows PowerShell введите следующую команду:
     
+      ```PowerShell
         Get-SPWeb -site <SiteCollURL> | % {$_.Lists} | where {$_.IrmEnabled -eq $true} | % {$_.DefaultItemOpen =[Microsoft.Sharepoint.DefaultItemOpen]::<DefaultItemOpenSetting>; $_.Update()}
+      ```
     
     где:
     
