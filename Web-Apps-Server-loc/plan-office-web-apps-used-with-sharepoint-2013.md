@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
 
-_**Последнее изменение раздела:**2016-12-16_
+**Последнее изменение раздела:** 2016-12-16
 
 **Сводка**. Общие рекомендации по планированию Office Web Apps при локальном использовании с SharePoint 2013.
 

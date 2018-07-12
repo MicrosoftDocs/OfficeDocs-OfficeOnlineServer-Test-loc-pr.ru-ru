@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps Server_
+**Применимо к:** Office Web Apps Server
 
-_**Последнее изменение раздела:**2016-12-16_
+**Последнее изменение раздела:** 2016-12-16
 
 **Сводка.** Содержит ссылки на технические справочные статьи, например справку по командлетам Windows PowerShell OfficeWebApps, для сервера Office Web Apps.
 
