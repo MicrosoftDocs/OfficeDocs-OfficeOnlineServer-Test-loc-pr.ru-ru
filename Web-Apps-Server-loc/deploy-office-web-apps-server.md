@@ -5,7 +5,7 @@ ms:assetid: e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5
 ms:mtpsurl: https://technet.microsoft.com/ru-ru/library/JJ219455(v=office.15)
 ms:contentKeyID: 49624516
 ms.date: 12/18/2017
-mtpsversion: v=office.15
+mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
