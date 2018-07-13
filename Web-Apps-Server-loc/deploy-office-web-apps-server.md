@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps Server_
+_**Применимо к:** Office Web Apps Server_
 
-_**Последнее изменение раздела:**2017-10-05_
+_**Последнее изменение раздела:** 2017-10-05_
 
 **Сводка**. Узнайте, как развернуть Сервер Office Web Apps в локальной среде для использования в SharePoint 2013 и Lync Server 2013.
 
@@ -53,18 +53,8 @@ _**Последнее изменение раздела:**2017-10-05_
 
   - По умолчанию в Сервер Office Web Apps можно просматривать файлы Office, но невозможно редактировать их. Чтобы редактировать файлы, необходима лицензия на редактирование, о которой можно прочитать в статьях [Планирование Office Web Apps (используется вместе с SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md) и [Настройка лицензирования в SharePoint Server 2013](https://technet.microsoft.com/ru-ru/library/jj219627\(v=office.15\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Для работы во всех наборах Наборы приложений Office 2013 можно использовать мышь, сочетания клавиш и сенсорные жесты. Дополнительные сведения об использовании сочетаний клавиш и сенсорных жестов в службах и продуктах Office см. в следующих статьях: <a href="https://go.microsoft.com/fwlink/p/?linkid=249150">Сочетания клавиш</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Справочник по сенсорному управлению в Office</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Для работы во всех наборах Наборы приложений Office 2013 можно использовать мышь, сочетания клавиш и сенсорные жесты. Дополнительные сведения об использовании сочетаний клавиш и сенсорных жестов в службах и продуктах Office см. в следующих статьях: <a href="https://go.microsoft.com/fwlink/p/?linkid=249150">Сочетания клавиш</a>, <a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Справочник по сенсорному управлению в Office</a>.
 
 
 ## Подготовка серверов для запуска сервера Office Web Apps
@@ -143,34 +133,14 @@ _**Последнее изменение раздела:**2017-10-05_
 
 6.  Скачайте и установите [сервер Office Web Apps с пакетом обновления 1 (SP1)](https://go.microsoft.com/fwlink/p/?linkid=510097). (Рекомендовано для Windows Server 2012 и Windows Server 2008 R2 с пакетом обновления 1 (SP1). Обязательно для Windows Server 2012 R2.)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Применяя сервер Office Web Apps с пакетом обновления 1 (SP1), следуйте указаниям в разделе <a href="apply-software-updates-to-office-web-apps-server.md">Применение обновлений программного обеспечения к серверу Office Web Apps</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Применяя сервер Office Web Apps с пакетом обновления 1 (SP1), следуйте указаниям в разделе <a href="apply-software-updates-to-office-web-apps-server.md">Применение обновлений программного обеспечения к серверу Office Web Apps</a>.
 
 
 7.  Проверьте наличие обновлений Сервер Office Web Apps, просмотрев список в [Центре обновлений TechNet для Office, серверов Office и связанных продуктов](https://go.microsoft.com/fwlink/p/?linkid=280271).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Если вы не установили сервер Office Web Apps с пакетом обновления 1 (SP1), примените обновление <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Если вы не установили сервер Office Web Apps с пакетом обновления 1 (SP1), примените обновление <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>.
 
 
 ## Шаг 3. Установка языковых пакетов для сервера Office Web Apps
@@ -188,24 +158,11 @@ _**Последнее изменение раздела:**2017-10-05_
 
 4.  Когда установка сервера Сервер Office Web Apps завершится, нажмите кнопку **Закрыть**
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.important(Office.15).gif" title="Важно" alt="Важно" /><strong>Важно!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Чтобы установить языковые пакеты после создания фермы серверов Сервер Office Web Apps, необходимо удалить сервер из фермы, установить на него языковой пакет, а затем вернуть этот сервер обратно в ферму.</p></li>
-<li><p>Чтобы языковой пакет работал правильно, его необходимо установить на все серверы в ферме.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> <ul>
+> <li><p>Чтобы установить языковые пакеты после создания фермы серверов Сервер Office Web Apps, необходимо удалить сервер из фермы, установить на него языковой пакет, а затем вернуть этот сервер обратно в ферму.</p></li>
+> <li><p>Чтобы языковой пакет работал правильно, его необходимо установить на все серверы в ферме.</p></li>
+> </ul>
 
 
 ## Развертывание фермы сервера Office Web Apps Server
@@ -319,18 +276,8 @@ default="true" ext="xls"/><action name="view"
  
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>В зависимости от параметров безопасности в используемом браузере может появиться запрос на включение параметра <strong>Показать все содержимое</strong>, прежде чем будет отображено содержимое XML-файла обнаружения.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTEE]
+> В зависимости от параметров безопасности в используемом браузере может появиться запрос на включение параметра <strong>Показать все содержимое</strong>, прежде чем будет отображено содержимое XML-файла обнаружения.
 
 
 ## Шаг 3. Настройка узла
@@ -391,18 +338,8 @@ default="true" ext="xls"/><action name="view"
     <?xml version="1.0" encoding="UTF-8"?>
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>В зависимости от параметров безопасности в используемом браузере может появиться запрос на включение параметра <strong>Показать все содержимое</strong>, прежде чем будет отображено содержимое XML-файла обнаружения.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> В зависимости от параметров безопасности в используемом браузере может появиться запрос на включение параметра <strong>Показать все содержимое</strong>, прежде чем будет отображено содержимое XML-файла обнаружения.
 
 
 ## Шаг 4. Настройте узел

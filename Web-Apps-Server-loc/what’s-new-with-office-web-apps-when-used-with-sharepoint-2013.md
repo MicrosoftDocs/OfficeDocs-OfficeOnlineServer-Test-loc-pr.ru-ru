@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Последнее изменение раздела:**2016-12-16_
+_**Последнее изменение раздела:** 2016-12-16_
 
 **Сводка.** Описание новых возможностей, доступных пользователям и администраторам SharePoint 2013 при использовании Office Web Apps.
 
@@ -68,18 +68,8 @@ _**Последнее изменение раздела:**2016-12-16_
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Широковещательный показ слайдов PowerPoint больше недоступен в SharePoint 2013. Но эта возможность по-прежнему поддерживается в OneDrive и Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Широковещательный показ слайдов PowerPoint больше недоступен в SharePoint 2013. Но эта возможность по-прежнему поддерживается в OneDrive и Lync Server 2013.
 
 
 ### Новые возможности установки и лицензирования для ИТ-специалистов

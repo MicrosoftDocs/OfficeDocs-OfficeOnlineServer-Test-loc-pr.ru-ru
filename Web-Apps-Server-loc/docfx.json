@@ -44,14 +44,14 @@
 
                                         ],
                   "globalMetadata":  {
-                                         "breadcrumb_path":  "/office/Web--Apps-Server-loc/breadcrumb/toc.json",
+                                         "breadcrumb_path":  "/office/Web-Apps-Server-loc/breadcrumb/toc.json",
                                          "extendBreadcrumb":  true,
                                          "ROBOTS":  "INDEX,FOLLOW",
                                          "ms.topic":  "conceptual",
                                          "author":  "mikeplum",
                                          "ms.author":  "mikeplum",
                                          "ms.prod":  "office-web-app-server",
-                                         "ms.technology": "server-general"
+                                         "ms.technology": "Office-web"
                                      },
                   "fileMetadata":  {
 

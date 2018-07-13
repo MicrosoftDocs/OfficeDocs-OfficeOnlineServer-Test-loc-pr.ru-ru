@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Последнее изменение раздела:**2016-12-16_
+_**Последнее изменение раздела:** 2016-12-16_
 
 **Сводка**. Общие рекомендации по планированию Office Web Apps при локальном использовании с SharePoint 2013.
 
@@ -23,19 +23,9 @@ _**Последнее изменение раздела:**2016-12-16_
 
 При планировании локального использования Office Web Apps с SharePoint 2013следует обратить внимание на поддержку браузера, требования к проверке подлинности SharePoint и вопросы лицензирования для просмотра и редактирования файлов Office с помощью Office Web Apps. Далее следует определить, будет ли SharePoint 2013 использовать веб-браузер или клиентское приложение при открытии файлов Office из библиотеки документов SharePoint 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.important(Office.15).gif" title="Важно" alt="Важно" /><strong>Важно!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Эта статья входит в раздел <a href="content-roadmap-for-office-web-apps-server.md">План содержимого для сервера Office Web Apps</a>. Используйте этот обзор в качестве отправной точки для поиска статей, загружаемых файлов и видеозаписей, рассказывающих о том, как развертывать и управлять Сервер Office Web Apps.<br />
-<strong>Необходима справка по Office Web Apps для настольного компьютера или мобильного устройства?</strong> Чтобы найти эти сведения, можно выполнить поиск по ключевым словам &quot;Office Web Apps&quot; на веб-сайте <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Эта статья входит в раздел <a href="content-roadmap-for-office-web-apps-server.md">План содержимого для сервера Office Web Apps</a>. Используйте этот обзор в качестве отправной точки для поиска статей, загружаемых файлов и видеозаписей, рассказывающих о том, как развертывать и управлять Сервер Office Web Apps.<br />
+<strong>Необходима справка по Office Web Apps для настольного компьютера или мобильного устройства?</strong> Чтобы найти эти сведения, можно выполнить поиск по ключевым словам &quot;Office Web Apps&quot; на веб-сайте <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
 В этой статье
