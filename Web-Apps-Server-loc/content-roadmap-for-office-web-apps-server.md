@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# План содержимого для сервера Office Web Apps
+# План содержимого для сервера Office Web Apps 
 
- 
+_<strong>Применимо к:</strong> Office Web Apps, Office Web Apps Server_
 
-_**Применимо к:** Office Web Apps, Office Web Apps Server_
-
-_**Последнее изменение раздела:** 2016-12-16_
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка**. Сведения о статьях, файлах для загрузки и других ресурсах, которые могут помочь ИТ-специалистам с развертыванием сервера Office Web Apps и управлением им.
 

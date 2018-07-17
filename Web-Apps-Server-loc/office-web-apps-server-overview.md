@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Обзор сервера Office Web Apps
 
- 
+_<strong>Применимо к:</strong> Office Web Apps Server_
 
-_**Применимо к:** Office Web Apps Server_
-
-_**Последнее изменение раздела:** 2017-05-26_
+_<strong>Последнее изменение раздела:</strong> 2017-05-26_
 
 **Сводка**. В этой статье описывается сервер Office Web Apps и его реализация браузерных функций Office для поддерживаемых узлов.
 

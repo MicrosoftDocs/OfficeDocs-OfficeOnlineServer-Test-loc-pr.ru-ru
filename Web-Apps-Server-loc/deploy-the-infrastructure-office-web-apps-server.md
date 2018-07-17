@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Развертывание инфраструктуры: Office Web Apps Server
 
- 
+_<strong>Применимо к:</strong> Office Web Apps Server_
 
-_**Применимо к:** Office Web Apps Server_
-
-_**Последнее изменение раздела:** 2016-12-16_
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка.** Статьи о сервере Office Web Apps и обеспечении этим сервером функциональных возможностей Office Web Apps для других узлов.
 

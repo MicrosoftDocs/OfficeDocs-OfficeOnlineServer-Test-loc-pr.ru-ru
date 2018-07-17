@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Планирование Office Web Apps (используется вместе с SharePoint 2013)
+# Планирование Office Web Apps (используется вместе с SharePoint 2013) 
 
- 
+_<strong>Применимо к:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Последнее изменение раздела:** 2016-12-16_
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка**. Общие рекомендации по планированию Office Web Apps при локальном использовании с SharePoint 2013.
 

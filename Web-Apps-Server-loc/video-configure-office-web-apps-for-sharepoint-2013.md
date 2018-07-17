@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Видео. Настройка Office Web Apps для SharePoint 2013
 
- 
+_<strong>Применимо к:</strong> Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Применимо к:** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Последнее изменение раздела:** 2016-12-16_
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка**. Описание девяти шагов для настройки работы фермы сервера Office Web Apps с SharePoint 2013.
 

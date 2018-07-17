@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Развертывание сервера Office Web Apps
+# Развертывание сервера Office Web Apps 
 
- 
+_<strong>Применимо к:</strong> Office Web Apps Server_
 
-_**Применимо к:** Office Web Apps Server_
-
-_**Последнее изменение раздела:** 2017-10-05_
+_<strong>Последнее изменение раздела:</strong> 2017-10-05_
 
 **Сводка**. Узнайте, как развернуть Сервер Office Web Apps в локальной среде для использования в SharePoint 2013 и Lync Server 2013.
 
@@ -83,11 +81,15 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 2.  Откройте командную строку Windows PowerShell в качестве администратора и выполните следующие команды, чтобы установить необходимые роли и службы.
     
+    ```PowerShell
         Import-Module ServerManager
+    ```
     
     Затем выполните команду.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
+    ```
     
     При получении запроса перезагрузите сервер.
 
@@ -95,7 +97,9 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 1.  Откройте командную строку Windows PowerShell в качестве администратора и выполните следующую команду, чтобы установить необходимые роли и службы.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     При получении запроса перезагрузите сервер.
 
@@ -107,7 +111,9 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 2.  Войдя под учетными данными администратора, откройте командную строку Windows PowerShell и выполните приведенную ниже команду, чтобы установить необходимые роли и службы.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     При получении запроса перезагрузите сервер.
 
@@ -152,7 +158,7 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 1.  Скачайте языковые пакеты Сервер Office Web Apps из [Центра загрузки Майкрософт](https://go.microsoft.com/fwlink/p/?linkid=263945).
 
-2.  Запустите программу **WebAppsServerLP\_en-us\_x64.exe**.
+2.  Запустите программу **WebAppsServerLP\en-us\x64.exe**.
 
 3.  На странице **Условия лицензионного соглашения на использование программного обеспечения корпорации Майкрософт** мастера языковых пакетов Сервер Office Web Apps 2013 установите флажок **Я принимаю условия этого соглашения** и нажмите кнопку **Продолжить**.
 
@@ -189,11 +195,13 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 Выполните команду **New-OfficeWebAppsFarm**, чтобы создать новую ферму Сервер Office Web Apps, состоящую из одного сервера, как показано в следующем примере.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+```
 
 **Параметры**
 
-  - **–InternalURL** — это имя сервера, на котором работает Сервер Office Web Apps, например **http://имя\_сервера**.
+  - **–InternalURL** — это имя сервера, на котором работает Сервер Office Web Apps, например **http://имя\сервера**.
 
   - Параметр **–AllowHttp** настраивает ферму на использование протокола HTTP.
 
@@ -207,18 +215,22 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 После создания фермы в командной строке Windows PowerShell отображаются сведения о ней. Чтобы проверить правильность установки и настройки Сервер Office Web Apps, откройте URL-адрес обнаружения Сервер Office Web Apps с помощью браузера, как показано в следующем примере. Этот URL-адрес — это параметр *InternalUrl*, заданный при настройке фермы Сервер Office Web Apps, с добавлением **/hosting/discovery**. Например:
 
+```
     http://servername/hosting/discovery
+```
 
 Если Сервер Office Web Apps работает без ошибок, в веб-браузере должен открыться XML-файл обнаружения для интерфейса открытой платформы веб-приложений (WOPI). Первые строки этого файла должны содержать примерно следующий текст:
 
+```XML 
     <?xml version="1.0" encoding="utf-8" ?> 
     - <wopi-discovery>
     - <net-zone name="internal-http">
-    - <app name="Excel" favIconUrl="http://servername/x/_layouts/images/FavIcon_Excel.ico" checkLicense="true">
-    <action name="view" ext="ods" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-    <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-    <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
-    <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+    - <app name="Excel" favIconUrl="http://servername/x/layouts/images/FavIconExcel.ico" checkLicense="true">
+    <action name="view" ext="ods" default="true" urlsrc="http://servername/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" /> 
+    <action name="view" ext="xls" default="true" urlsrc="http://servername/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" /> 
+    <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" /> 
+    <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" /> 
+```
 
 ## Шаг 3. Настройка узла
 
@@ -239,11 +251,13 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 Выполните команду **New-OfficeWebAppsFarm**, чтобы создать новую ферму Сервер Office Web Apps, состоящую из одного сервера, как показано в следующем примере.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **Параметры**
 
-  - **–InternalURL** — это полное доменное имя сервера, на котором работает Сервер Office Web Apps, например **http://имя\_сервера.contoso.com**.
+  - **–InternalURL** — это полное доменное имя сервера, на котором работает Сервер Office Web Apps, например **http://имя\сервера.contoso.com**.
 
   - **–ExternalURL** — это полное доменное имя, которое будет доступно из Интернета.
 
@@ -259,21 +273,22 @@ _**Последнее изменение раздела:** 2017-10-05_
 
 После создания фермы в командной строке Windows PowerShell отображаются сведения о ней. Чтобы проверить правильность установки и настройки Сервер Office Web Apps, откройте URL-адрес обнаружения Сервер Office Web Apps с помощью браузера, как показано в следующем примере. Этот URL-адрес — это параметр *InternalUrl*, заданный при настройке фермы Сервер Office Web Apps, с добавлением **/hosting/discovery**. Например:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 Если Сервер Office Web Apps работает без ошибок, в веб-браузере должен открыться XML-файл обнаружения для интерфейса открытой платформы веб-приложений (WOPI). Первые строки этого файла должны содержать примерно следующий текст:
 
-``` 
+```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
-favIconUrl="https://wac.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action 
+favIconUrl="https://wac.contoso.com/x/layouts/images/FavIconExcel.ico"><action 
 name="view" 
-urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
+urlsrc="https://wac.contoso.com/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" 
 default="true" ext="ods"/><action name="view" 
-urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
-default="true" ext="xls"/><action name="view"
- 
+urlsrc="https://wac.contoso.com/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" 
+default="true" ext="xls"/><action name="view" 
 ```
 
 > [!NOTEE]
@@ -303,11 +318,13 @@ default="true" ext="xls"/><action name="view"
 
 Выполните команду **New-OfficeWebAppsFarm**, чтобы создать новую ферму Сервер Office Web Apps на первом сервере, как показано в следующем примере.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **Параметры**
 
-  - **–InternalURL** — это полное доменное имя сервера, на котором работает Сервер Office Web Apps, например **http://имя\_сервера.contoso.com**.
+  - **–InternalURL** — это полное доменное имя сервера, на котором работает Сервер Office Web Apps, например **http://имя\сервера.contoso.com**.
 
   - **–ExternalURL** — это полное доменное имя, которое будет доступно из Интернета.
 
@@ -323,7 +340,9 @@ default="true" ext="xls"/><action name="view"
 
 После запуска Сервер Office Web Apps на первом сервере выполните команду **New-OfficeWebAppsMachine** на каждом сервере, который нужно добавить в ферму Сервер Office Web Apps. В параметре **–MachineToJoin** укажите имя компьютера одного из серверов, уже входящих в ферму Сервер Office Web Apps. Например, если server1.contoso.com уже добавлен в ферму, используйте следующую команду:
 
+```PowerShell
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
 Хотите узнать больше этих параметрах? Их можно найти в разделе [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
@@ -331,12 +350,16 @@ default="true" ext="xls"/><action name="view"
 
 После создания фермы в командной строке Windows PowerShell отображаются сведения о ней. Чтобы проверить правильность установки и настройки Сервер Office Web Apps, откройте URL-адрес обнаружения Сервер Office Web Apps с помощью браузера, как показано в следующем примере. Этот URL-адрес — это параметр *InternalUrl*, заданный при настройке фермы Сервер Office Web Apps, с добавлением **/hosting/discovery**. Например:
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 Если Сервер Office Web Apps работает без ошибок, в веб-браузере должен открыться XML-файл обнаружения для интерфейса открытой платформы веб-приложений (WOPI). Первые строки этого файла должны содержать примерно следующий текст:
 
+```XML
     <?xml version="1.0" encoding="UTF-8"?>
-    <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+    <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/layouts/images/FavIconExcel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=DCLLCC&>" default="true" ext="xlsb"/> 
+```
 
 > [!NOTE]
 > В зависимости от параметров безопасности в используемом браузере может появиться запрос на включение параметра <strong>Показать все содержимое</strong>, прежде чем будет отображено содержимое XML-файла обнаружения.
@@ -356,19 +379,19 @@ default="true" ext="xls"/><action name="view"
 
 **Для Windows Server 2008 R2**
 
-```
-    %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-```
-```
+```PowerShell
+    %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnetregiis.exe -iru
+
     iisreset /restart /noforce
 ```
 
 **Для Windows Server 2012 или Windows Server 2012 R2**
 
+```PowerShell
     dism /online /enable-feature /featurename:IIS-ASPNET45
+```
 
 ## См. также
-
 
 [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
 [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  

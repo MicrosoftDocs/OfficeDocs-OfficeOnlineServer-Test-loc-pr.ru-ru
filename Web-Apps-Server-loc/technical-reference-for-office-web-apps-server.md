@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Техническая справка по серверу Office Web Apps
 
- 
+_<strong>Применимо к:</strong> Office Web Apps Server_
 
-_**Применимо к:** Office Web Apps Server_
-
-_**Последнее изменение раздела:** 2016-12-16_
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка.** Содержит ссылки на технические справочные статьи, например справку по командлетам Windows PowerShell OfficeWebApps, для сервера Office Web Apps.
 

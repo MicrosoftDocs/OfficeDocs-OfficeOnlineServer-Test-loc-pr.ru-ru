@@ -9,13 +9,12 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Новые возможности Office Web Apps при использовании SharePoint 2013
+# Новые возможности Office Web Apps при использовании SharePoint 2013 
 
- 
 
-_**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Применимо к:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Последнее изменение раздела:** 2016-12-16_
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка.** Описание новых возможностей, доступных пользователям и администраторам SharePoint 2013 при использовании Office Web Apps.
 
