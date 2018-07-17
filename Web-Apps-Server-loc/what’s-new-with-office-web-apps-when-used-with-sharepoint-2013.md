@@ -9,13 +9,12 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Новые возможности Office Web Apps при использовании SharePoint 2013
+# Новые возможности Office Web Apps при использовании SharePoint 2013 
 
- 
 
-**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
+_<strong>Применимо к:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**Последнее изменение раздела:** 2016-12-16
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка.** Описание новых возможностей, доступных пользователям и администраторам SharePoint 2013 при использовании Office Web Apps.
 
@@ -68,18 +67,8 @@ ms.translationtype: HT
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Широковещательный показ слайдов PowerPoint больше недоступен в SharePoint 2013. Но эта возможность по-прежнему поддерживается в OneDrive и Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Широковещательный показ слайдов PowerPoint больше недоступен в SharePoint 2013. Но эта возможность по-прежнему поддерживается в OneDrive и Lync Server 2013.
 
 
 ### Новые возможности установки и лицензирования для ИТ-специалистов

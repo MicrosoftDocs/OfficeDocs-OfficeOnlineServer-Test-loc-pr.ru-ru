@@ -11,11 +11,10 @@ ms.translationtype: HT
 
 # Планирование сервера Office Web Apps
 
- 
 
-**Применимо к:** Office Web Apps Server
+_<strong>Применимо к:</strong> Office Web Apps Server_
 
-**Последнее изменение раздела:** 2017-10-10
+_<strong>Последнее изменение раздела:</strong> 2017-10-10_
 
 **Сводка**. В этой статье рассматриваются требования, предъявляемые сервером Office Web Apps, такие как протокол HTTPS, сертификаты, виртуализация, балансировка нагрузки, топологии и безопасность.
 
@@ -29,18 +28,8 @@ ms.translationtype: HT
 
   - [Настройка интеграции с сервером Office Web Apps и Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Продукты SharePoint 2010 не могут быть узлом для Сервер Office Web Apps. Сервер Office Web Apps не поддерживается SharePoint Foundation 2010 или SharePoint Server 2010. Сервер Office Web Apps также не поддерживается Exchange Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Продукты SharePoint 2010 не могут быть узлом для Сервер Office Web Apps. Сервер Office Web Apps не поддерживается SharePoint Foundation 2010 или SharePoint Server 2010. Сервер Office Web Apps также не поддерживается Exchange Server 2013.
 
 
 В этой статье
@@ -103,18 +92,8 @@ ms.translationtype: HT
 
 Подробные сведения об элементах, которые НЕОБХОДИМО установить, приведены в следующей таблице.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.important(Office.15).gif" title="Важно" alt="Важно" /><strong>Важно!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Сервер Office Web Apps можно скачать только на веб-сайте <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center (VLSC)</a>. Для загрузки Сервер Office Web Apps необходима лицензия на Office профессиональный плюс 2013, Office стандартный 2013 или Office для Mac 2011, предусмотренная соглашением о корпоративном лицензировании. Загружаемые файлы находятся в разделах на портале VLSC, посвященных продуктам Office.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Сервер Office Web Apps можно скачать только на веб-сайте <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center (VLSC)</a>. Для загрузки Сервер Office Web Apps необходима лицензия на Office профессиональный плюс 2013, Office стандартный 2013 или Office для Mac 2011, предусмотренная соглашением о корпоративном лицензировании. Загружаемые файлы находятся в разделах на портале VLSC, посвященных продуктам Office.
 
 
 ### Загрузки, роли сервера и компоненты, необходимые для работы сервера Office Web Apps
@@ -384,18 +363,8 @@ ms.translationtype: HT
 
   - **Для ферм с балансировкой нагрузки**. Если вы разгружаете SSL, необходимо импортировать сертификат на устройство балансировки нагрузки. Если вы не разгружаете SSL, установите сертификат на каждый сервер в ферме серверов Сервер Office Web Apps.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Не используйте самозаверяющие сертификаты. Их можно использовать только в некритических тестовых средах.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Не используйте самозаверяющие сертификаты. Их можно использовать только в некритических тестовых средах.
 
 
 Дополнительные сведения о сертификатах см. в разделе [Получение SSL-сертификата](https://go.microsoft.com/fwlink/p/?linkid=269700).
@@ -422,18 +391,8 @@ ms.translationtype: HT
 
 Вы можете добавлять домены в список разрешенных уже после создания фермы Сервер Office Web Apps. Дополнительные сведения о добавлении доменов в список разрешенных см. в статье [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.important(Office.15).gif" title="Важно" alt="Важно" /><strong>Важно!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Если в списке разрешенных отсутствуют домены, Сервер Office Web Apps принимает запросы файлов от узлов любого домена. Если ваша ферма Сервер Office Web Apps доступна через Интернет, не оставляйте этот список пустым. В противном случае просматривать и редактировать контент смогут любые пользователи с доступом к вашей ферме Сервер Office Web Apps.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Если в списке разрешенных отсутствуют домены, Сервер Office Web Apps принимает запросы файлов от узлов любого домена. Если ваша ферма Сервер Office Web Apps доступна через Интернет, не оставляйте этот список пустым. В противном случае просматривать и редактировать контент смогут любые пользователи с доступом к вашей ферме Сервер Office Web Apps.
 
 
 ## Планирование Online Viewers с использованием сервера Office Web Apps

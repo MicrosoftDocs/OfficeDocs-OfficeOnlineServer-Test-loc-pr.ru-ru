@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Настройка способа открытия документов с поддержкой браузера по умолчанию (при использовании Office Web Apps с SharePoint 2013) 
 
-**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
+_<strong>Применимо к:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**Последнее изменение раздела:** 2016-12-16
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка.** В этой статье описывается, как настроить способ открытия документов Office по умолчанию в семействах сайтов и библиотеках документов SharePoint.
 
@@ -31,50 +31,20 @@ ms.translationtype: HT
 
 В целом, функция OpenInClient переопределяет все привязки WOPI, установленные между SharePoint 2013 и Сервер Office Web Apps. Иными словами, если компонент OpenInClient библиотеки или семейства сайтов SharePoint 2013 включен, документы будут открываться в клиентском приложении, даже если сервер SharePoint 2013 настроен на использование Сервер Office Web Apps.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Настройка используемого по умолчанию способа открытия документов с поддержкой браузера не влияет на то, смогут ли пользователи загружать документы, применяя функции <strong>Извлечь</strong> и <strong>Отправить</strong> в SharePoint 2013. Сведения о настройке разрешений извлечения, загрузки и просмотра в SharePoint 2013 см. в статье <a href="https://technet.microsoft.com/ru-ru/library/cc262939(v=office.15)">Планирование разрешений для сайтов и контента в SharePoint 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Настройка используемого по умолчанию способа открытия документов с поддержкой браузера не влияет на то, смогут ли пользователи загружать документы, применяя функции <strong>Извлечь</strong> и <strong>Отправить</strong> в SharePoint 2013. Сведения о настройке разрешений извлечения, загрузки и просмотра в SharePoint 2013 см. в статье <a href="https://technet.microsoft.com/ru-ru/library/cc262939(v=office.15)">Планирование разрешений для сайтов и контента в SharePoint 2013</a>.
 
 
 ## Установите компонент для библиотеки документов или семейства сайтов
 
 Используйте одну из следующих процедур для установки компонента OpenInClient в SharePoint 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>В некоторых процедурах, приведенных в этой статье, для выполнения командлетов SharePoint используется Командная консоль SharePoint 2013. Если вы решили использовать консоль Windows PowerShell, необходимо добавить оснастку Microsoft.SharePoint.PowerShell с помощью командлета <strong>Add-PSSnapin</strong>. Дополнительные сведения об использовании Windows PowerShell с SharePoint 2013 см. в статье <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Использование Windows PowerShell для администрирования SharePoint 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> В некоторых процедурах, приведенных в этой статье, для выполнения командлетов SharePoint используется Командная консоль SharePoint 2013. Если вы решили использовать консоль Windows PowerShell, необходимо добавить оснастку Microsoft.SharePoint.PowerShell с помощью командлета <strong>Add-PSSnapin</strong>. Дополнительные сведения об использовании Windows PowerShell с SharePoint 2013 см. в статье <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Использование Windows PowerShell для администрирования SharePoint 2013</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Для работы во всех выпусках Наборы Office 2013 можно использовать мышь, сочетания клавиш и сенсорные жесты. Сведения об использовании сочетаний клавиш и жестов с продуктами и службами Office см. в статье <a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Сочетания клавиш</a> и <a href="http://go.microsoft.com/fwlink/p/?linkid=253163">справочнике по сенсорному управлению в Office</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Для работы во всех выпусках Наборы Office 2013 можно использовать мышь, сочетания клавиш и сенсорные жесты. Сведения об использовании сочетаний клавиш и жестов с продуктами и службами Office см. в статье <a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Сочетания клавиш</a> и <a href="http://go.microsoft.com/fwlink/p/?linkid=253163">справочнике по сенсорному управлению в Office</a>.
 
 
  **Настройка компонента OpenInClient для семейств сайтов**
@@ -99,18 +69,8 @@ ms.translationtype: HT
     
     Администратор может использовать командлет **Add-SPShellAdmin**, чтобы предоставлять разрешения для использования командлетов продуктов SharePoint 2013.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.
 
 
 2.  Открытие Командная консоль SharePoint 2013 с повышенными привилегиями.
@@ -195,18 +155,8 @@ ms.translationtype: HT
     
     Администратор может использовать командлет **Add-SPShellAdmin**, чтобы предоставлять разрешения для использования командлетов продуктов SharePoint 2013.
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Если у вас отсутствуют разрешения, обратитесь к администратору установки или администратору SQL Server и запросите соответствующие разрешения. Дополнительные сведения о разрешениях Windows PowerShell см. в статьях <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Разрешения</a> и <a href="https://technet.microsoft.com/ru-ru/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.
 
 
 2.  Открытие Командная консоль SharePoint 2013 с повышенными привилегиями.

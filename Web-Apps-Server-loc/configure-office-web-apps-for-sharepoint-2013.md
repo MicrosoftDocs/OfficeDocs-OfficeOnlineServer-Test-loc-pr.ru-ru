@@ -10,11 +10,10 @@ ms.translationtype: HT
 ---
 
 # Настройка Office Web Apps для SharePoint 2013
- 
 
-**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
+_<strong>Применимо к:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**Последнее изменение раздела:** 2016-12-16
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка.** Руководство по настройке SharePoint 2013 для использования Office Web Apps.
 

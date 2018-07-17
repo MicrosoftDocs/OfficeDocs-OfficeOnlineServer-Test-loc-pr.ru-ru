@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # План содержимого для сервера Office Web Apps 
 
-**Применимо к:** Office Web Apps, Office Web Apps Server
+_<strong>Применимо к:</strong> Office Web Apps, Office Web Apps Server_
 
-**Последнее изменение раздела:** 2016-12-16
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка**. Сведения о статьях, файлах для загрузки и других ресурсах, которые могут помочь ИТ-специалистам с развертыванием сервера Office Web Apps и управлением им.
 
@@ -25,19 +25,9 @@ ms.translationtype: HT
 
 Если вы — ИТ-специалист, ищущий информацию о Outlook Web App, изучите статью [Новые возможности Outlook Web App в Exchange 2013](http://go.microsoft.com/fwlink/?linkid=282325).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.important(Office.15).gif" title="Важно" alt="Важно" /><strong>Важно!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Эта статья предназначена для администраторов, занимающихся развертыванием и управлением Сервер Office Web Apps в своих организациях.<br />
-<strong>Вы ищете справку по Office Web Apps на настольном компьютере или мобильном устройстве?</strong> Возможно, вы хотите узнать, как <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">начать работу с Office Web Apps</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Эта статья предназначена для администраторов, занимающихся развертыванием и управлением Сервер Office Web Apps в своих организациях.<br />
+<strong>Вы ищете справку по Office Web Apps на настольном компьютере или мобильном устройстве?</strong> Возможно, вы хотите узнать, как <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">начать работу с Office Web Apps</a>.
 
 
 В следующей таблице описываются ресурсы, доступные ИТ-специалистам, которые занимаются локальным развертыванием и управлением Сервер Office Web Apps.

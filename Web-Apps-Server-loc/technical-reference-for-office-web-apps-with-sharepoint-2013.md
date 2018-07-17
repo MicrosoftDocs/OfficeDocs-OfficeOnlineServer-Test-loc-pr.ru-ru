@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Техническая справка по Office Web Apps (с SharePoint 2013)
 
- 
+_<strong>Применимо к:</strong> Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013
-
-**Последнее изменение раздела:** 2016-12-16
+_<strong>Последнее изменение раздела:</strong> 2016-12-16_
 
 **Сводка.** Поиск технических справочных статей, например справки по командлетам Windows PowerShell SPWOPI, для Office Web Apps.
 
