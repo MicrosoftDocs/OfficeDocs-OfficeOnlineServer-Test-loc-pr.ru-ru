@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Последнее изменение раздела:**2016-12-16_
+_**Последнее изменение раздела:** 2016-12-16_
 
 **Сводка**. Сведения об Office Web Apps, получении сервера Office Web Apps и работе этих продуктов на локальных ресурсах вместе с SharePoint 2013.
 

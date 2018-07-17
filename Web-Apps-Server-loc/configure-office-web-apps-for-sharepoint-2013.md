@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Применимо к:** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Последнее изменение раздела:**2016-12-16_
+_**Последнее изменение раздела:** 2016-12-16_
 
 **Сводка.** Руководство по настройке SharePoint 2013 для использования Office Web Apps.
 

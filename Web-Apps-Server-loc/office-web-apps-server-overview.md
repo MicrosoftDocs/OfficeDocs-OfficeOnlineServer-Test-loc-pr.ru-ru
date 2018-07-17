@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps Server_
+_**Применимо к:** Office Web Apps Server_
 
-_**Последнее изменение раздела:**2017-05-26_
+_**Последнее изменение раздела:** 2017-05-26_
 
 **Сводка**. В этой статье описывается сервер Office Web Apps и его реализация браузерных функций Office для поддерживаемых узлов.
 
@@ -23,19 +23,9 @@ _**Последнее изменение раздела:**2017-05-26_
 
 Сервер Office Web Apps — это новый серверный продукт Office, предоставляющий браузерные версии приложений Word, PowerPoint, Excel и OneNote. С помощью одной фермы серверов Office Web Apps может получать доступ к файлам Office через SharePoint 2013, Lync Server 2013, общие папки и веб-сайты. Благодаря новой модели автономного развертывания вы сможете управлять обновлениями фермы серверов Office Web Apps независимо от других серверных продуктов Office, развернутых в вашей организации.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.important(Office.15).gif" title="Важно" alt="Важно" /><strong>Важно!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Эта статья входит в раздел <a href="content-roadmap-for-office-web-apps-server.md">План содержимого для сервера Office Web Apps</a>. Используйте этот обзор в качестве отправной точки для поиска статей, загружаемых файлов и видеозаписей, рассказывающих о том, как выполнить развертывание и управлять Сервер Office Web Apps.<br />
-<strong>Необходима справка по Office Web Apps для настольного компьютера или мобильного устройства?</strong> Чтобы найти эти сведения, можно выполнить поиск по ключевым словам &quot;Office Web Apps&quot; на веб-сайте <a href="https://go.microsoft.com/fwlink/p/?linkid=32496">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Эта статья входит в раздел <a href="content-roadmap-for-office-web-apps-server.md">План содержимого для сервера Office Web Apps</a>. Используйте этот обзор в качестве отправной точки для поиска статей, загружаемых файлов и видеозаписей, рассказывающих о том, как выполнить развертывание и управлять Сервер Office Web Apps.<br />
+<strong>Необходима справка по Office Web Apps для настольного компьютера или мобильного устройства?</strong> Чтобы найти эти сведения, можно выполнить поиск по ключевым словам &quot;Office Web Apps&quot; на веб-сайте <a href="https://go.microsoft.com/fwlink/p/?linkid=32496">Office.com</a>.
 
 
 В этой статье
@@ -70,18 +60,8 @@ _**Последнее изменение раздела:**2017-05-26_
 
 ![Рисунок, на котором показаны возможности просмотра и редактирования в Office Web Apps на различных типах устройств. Выделены возможности, оптимизированные для сенсорных экранов.](images/Ff431685.8bf76669-f511-4e02-8ed3-d658e9e746f0(Office.15).gif "Рисунок, на котором показаны возможности просмотра и редактирования в Office Web Apps на различных типах устройств. Выделены возможности, оптимизированные для сенсорных экранов.")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Служба широковещательного показа PowerPoint исключена из состава SharePoint 2013 и теперь предлагается в OneDrive и Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Служба широковещательного показа PowerPoint исключена из состава SharePoint 2013 и теперь предлагается в OneDrive и Lync Server 2013.
 
 
 Подробнее о новых возможностях в Office Web Apps см. в статье [Работа Office Web Apps в локальной среде с SharePoint 2013](how-office-web-apps-work-on-premises-with-sharepoint-2013.md).
@@ -114,18 +94,8 @@ _**Последнее изменение раздела:**2017-05-26_
 
 Подробнее о функции Online Viewers см. в статье, посвященной [планированию Online Viewers](plan-office-web-apps-server.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>На сайте <a href="http://go.microsoft.com/fwlink/?linkid=25654">Office.com</a> корпорации Майкрософт размещается интернет-версия функции создания URL-адресов.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> На сайте <a href="http://go.microsoft.com/fwlink/?linkid=25654">Office.com</a> корпорации Майкрософт размещается интернет-версия функции создания URL-адресов.
 
 
 ## См. также

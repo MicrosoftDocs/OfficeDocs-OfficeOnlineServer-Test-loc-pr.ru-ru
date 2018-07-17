@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Применимо к:**Office Web Apps Server_
+_**Применимо к:** Office Web Apps Server_
 
-_**Последнее изменение раздела:**2016-12-16_
+_**Последнее изменение раздела:** 2016-12-16_
 
 **Сводка**. Сведения о применении обновлений программного обеспечения к ферме серверов Office Web Apps.
 
@@ -23,35 +23,14 @@ _**Последнее изменение раздела:**2016-12-16_
 
 После нового выпуска Сервер Office Web Apps компания Microsoft создает серию обновлений программного обеспечения для повышения безопасности, эффективности и надежности сервера. В этой статье описывается процесс применения обновлений программного обеспечения к отдельным серверам фермы Сервер Office Web Apps.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219455.important(Office.15).gif" title="Важно" alt="Важно" /><strong>Важно!</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Эта статья входит в состав набора <a href="content-roadmap-for-office-web-apps-server.md">План содержимого для сервера Office Web Apps</a>. Используйте этот обзор в качестве начального этапа для поиска статей, загружаемых файлов и видеозаписей, помогающих развернуть Сервер Office Web Apps и управлять им.<br />
-<strong>Нужна помощь с Office Web Apps на рабочем столе или мобильном устройстве?</strong> Для этого можно выполнить поиск по словам &quot;Office Web Apps&quot; на сайте <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Эта статья входит в состав набора <a href="content-roadmap-for-office-web-apps-server.md">План содержимого для сервера Office Web Apps</a>. Используйте этот обзор в качестве начального этапа для поиска статей, загружаемых файлов и видеозаписей, помогающих развернуть Сервер Office Web Apps и управлять им.<br />
+<strong>Нужна помощь с Office Web Apps на рабочем столе или мобильном устройстве?</strong> Для этого можно выполнить поиск по словам &quot;Office Web Apps&quot; на сайте <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ966220.warning(Office.15).gif" title="Предупреждение" alt="Предупреждение" /><strong>Предупреждение:</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Применение обновлений Сервер Office Web Apps с использованием автоматического процесса обновления не поддерживается Сервер Office Web Apps, поскольку обновления к Сервер Office Web Apps должны применяться особым образом, описанным в данной статье. Если применять обновления Сервер Office Web Apps автоматически, пользователи, возможно, не смогут просматривать и редактировать документы в Office Web Apps. В таком случае необходимо выполнить перестройку фермы Сервер Office Web Apps. Для этого нужно удалить Сервер Office Web Apps из фермы с помощью <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, удалить Сервер Office Web Apps с помощью приложения или программы удаления и переустановить Сервер Office Web Apps, следуя пошаговым инструкциям из статьи <a href="deploy-office-web-apps-server.md">Развертывание сервера Office Web Apps</a>. После переустановки примените обновление согласно инструкциям из данной статьи.<br />
-Необходимо также прочитать указания из раздела о <a href="plan-office-web-apps-server.md">планировании обновлений для сервера Office Web Apps</a> и внедрить процесс обновления для фермы Сервер Office Web Apps.</td>
-</tr>
-</tbody>
-</table>
-
+> [!WARNING]
+> Применение обновлений Сервер Office Web Apps с использованием автоматического процесса обновления не поддерживается Сервер Office Web Apps, поскольку обновления к Сервер Office Web Apps должны применяться особым образом, описанным в данной статье. Если применять обновления Сервер Office Web Apps автоматически, пользователи, возможно, не смогут просматривать и редактировать документы в Office Web Apps. В таком случае необходимо выполнить перестройку фермы Сервер Office Web Apps. Для этого нужно удалить Сервер Office Web Apps из фермы с помощью <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, удалить Сервер Office Web Apps с помощью приложения или программы удаления и переустановить Сервер Office Web Apps, следуя пошаговым инструкциям из статьи <a href="deploy-office-web-apps-server.md">Развертывание сервера Office Web Apps</a>. После переустановки примените обновление согласно инструкциям из данной статьи.<br />
+Необходимо также прочитать указания из раздела о <a href="plan-office-web-apps-server.md">планировании обновлений для сервера Office Web Apps</a> и внедрить процесс обновления для фермы Сервер Office Web Apps.
 
 ## Перед началом работы
 
@@ -61,25 +40,12 @@ _**Последнее изменение раздела:**2016-12-16_
 
 При обновлении вам придется создать ферму Сервер Office Web Apps заново. Чтобы подготовиться повторно создать ферму Сервер Office Web Apps, просмотрите свойства текущей фермы Сервер Office Web Apps с помощью командлета Windows PowerShell**Get-OfficeWebAppFarm**, а также параметры [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). Параметры, используемые для **New-OfficeWebAppsFarm**, должны совпадать с теми, которые использовались при первой настройке фермы Сервер Office Web Apps.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219451.note(Office.15).gif" title="Примечание" alt="Примечание" /><strong>Примечание</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Задачи, приведенные в этой статье, можно выполнять мышью, сочетаниями клавиш на клавиатуре или сенсорными жестами. Дополнительные сведения см. в следующих источниках.
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Сочетания клавиш</a></p></li>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249151">Сенсорные жесты</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Задачи, приведенные в этой статье, можно выполнять мышью, сочетаниями клавиш на клавиатуре или сенсорными жестами. Дополнительные сведения см. в следующих источниках.
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Сочетания клавиш</a></p></li>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249151">Сенсорные жесты</a></p></li>
+> </ul>
 
 
 ## Применение обновлений программного обеспечения к ферме Office Web Apps из одного сервера
