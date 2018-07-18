@@ -9,7 +9,7 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Развертывание сервера Office Web Apps 
+# Развертывание сервера Office Web Apps 
 
 _<strong>Применимо к:</strong> Office Web Apps Server_
 
@@ -121,7 +121,7 @@ _<strong>Последнее изменение раздела:</strong> 2017-10-
 
 Выполните следующие действия на всех серверах, где будет работать Сервер Office Web Apps.
 
-1.  Скачайте Сервер Office Web Apps на веб-сайте [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?linkid=256561). Чтобы скачать Сервер Office Web Apps, необходима лицензия Office профессиональный плюс 2013, Office стандартный 2013 или Office для Mac 2011, предусмотренная соглашением о корпоративном лицензировании. Загружаемые файлы находятся в разделах на портале VLSC, посвященных продуктам Office.
+1.  Скачайте Сервер Office Web Apps на веб-сайте [Volume Licensing Service Center (VLSC)](https://go.microsoft.com/fwlink/p/?linkid=256561). Чтобы скачать Сервер Office Web Apps, необходима лицензия Office профессиональный плюс 2013, Office стандартный 2013 или Office для Mac 2011, предусмотренная соглашением о корпоративном лицензировании. Загружаемые файлы находятся в разделах на портале VLSC, посвященных продуктам Office.
 
 2.  Выполните одно из указанных ниже действий.
     
@@ -381,7 +381,9 @@ default="true" ext="xls"/><action name="view"
 
 ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnetregiis.exe -iru
+```
 
+```PowerShell
     iisreset /restart /noforce
 ```
 
