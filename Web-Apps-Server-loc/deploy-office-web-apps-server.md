@@ -291,7 +291,7 @@ urlsrc="https://wac.contoso.com/x/layouts/xlviewerinternal.aspx?<ui=UILLCC&><rs=
 default="true" ext="xls"/><action name="view" 
 ```
 
-> [!NOTEE]
+> [!NOTE]
 > В зависимости от параметров безопасности в используемом браузере может появиться запрос на включение параметра <strong>Показать все содержимое</strong>, прежде чем будет отображено содержимое XML-файла обнаружения.
 
 
